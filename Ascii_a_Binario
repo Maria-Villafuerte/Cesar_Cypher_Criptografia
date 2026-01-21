@@ -1,0 +1,69 @@
+public class Ascii_a_Binario {
+
+    public static String conversorString(String ascii) {
+        if (ascii == null || ascii.isEmpty()) {
+            return "";
+        }
+
+        StringBuilder resultado = new StringBuilder();
+        for (int i = 0; i < ascii.length(); i++) {
+            char caracter = ascii.charAt(i);
+            int valorAscii = (int) caracter; // Obtener código ASCII
+
+            // Convertir a binario usando método de Java
+            String binario = Integer.toBinaryString(valorAscii);
+
+            // Agregar al resultado (separado por espacios)
+            resultado.append(binario).append(" ");
+        }
+
+        return resultado.toString().trim();
+    }
+
+    // MÉTODO 2: Conversión manual a binario (algoritmo tradicional)
+    public static String conversorManual(char caracter) {
+        int valorAscii = (int) caracter;
+
+        if (valorAscii == 0) {
+            return "0";
+        }
+
+        StringBuilder binario = new StringBuilder();
+        int numero = valorAscii;
+
+        // Algoritmo de división sucesiva entre 2
+        while (numero > 0) {
+            int residuo = numero % 2; // Obtener residuo (0 o 1)
+            binario.insert(0, residuo); // Insertar al inicio
+            numero = numero / 2; // Dividir entre 2
+        }
+
+        return binario.toString();
+    }
+
+       public static void main(String[] args) {
+        // Ejemplo 1: Un solo carácter
+        System.out.println("=== Conversión de caracteres individuales ===");
+        char letra = 'A';
+        System.out.println("Carácter: " + letra);
+        System.out.println("Código ASCII: " + (int)letra);
+        System.out.println("Binario (método manual): " + conversorManual(letra));
+        System.out.println();
+
+        // Ejemplo 2: Una palabra completa
+        System.out.println("=== Conversión de palabras ===");
+        String palabra = "Hola";
+        System.out.println("Palabra: " + palabra);
+        System.out.println("En binario: " + conversorString(palabra));
+        System.out.println();
+
+        // Ejemplo 3: Desglose detallado
+        System.out.println("=== Desglose detallado ===");
+        String texto = "ABC";
+        for (int i = 0; i < texto.length(); i++) {
+            char c = texto.charAt(i);
+            System.out.printf("'%c' → ASCII: %d → Binario: %s%n",
+                    c, (int)c, conversorManual(c));
+        }
+    }
+}
