@@ -1,4 +1,5 @@
 public class ConvertidorBinario {
+    
     private OperacionesBinarias opBinarias;
     private ManejadorASCII manejadorAscii;
     private ManejadorBase64 manejadorB64;
