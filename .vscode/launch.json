@@ -8,6 +8,55 @@
       "type": "java",
       "name": "MainAsciiABinario",
       "request": "launch",
+      "mainClass": "main_de_prueba.MainAsciiABinario",
+      "projectName": "Cesar_Cypher_Criptografia_64cb31a"
+    },
+    {
+      "type": "java",
+      "name": "MainXorBinario",
+      "request": "launch",
+      "mainClass": "MainXorBinario",
+      "projectName": "Cesar_Cypher_Criptografia_64cb31a"
+    },
+    {
+      "type": "java",
+      "name": "MainBinarioAAscii",
+      "request": "launch",
+      "mainClass": "MainBinarioAAscii",
+      "projectName": "Cesar_Cypher_Criptografia_64cb31a"
+    },
+    {
+      "type": "java",
+      "name": "MainBase64ABinario",
+      "request": "launch",
+      "mainClass": "MainBase64ABinario",
+      "projectName": "Cesar_Cypher_Criptografia_64cb31a"
+    },
+    {
+      "type": "java",
+      "name": "MainBase64AAscii",
+      "request": "launch",
+      "mainClass": "MainBase64AAscii",
+      "projectName": "Cesar_Cypher_Criptografia_64cb31a"
+    },
+    {
+      "type": "java",
+      "name": "MainAsciiABinario",
+      "request": "launch",
+      "mainClass": "mains_de_prueba.MainAsciiABinario",
+      "projectName": "Cesar_Cypher_Criptografia_64cb31a"
+    },
+    {
+      "type": "java",
+      "name": "Ascii_a_Binario",
+      "request": "launch",
+      "mainClass": "Ascii_a_Binario",
+      "projectName": "Cesar_Cypher_Criptografia_64cb31a"
+    },
+    {
+      "type": "java",
+      "name": "MainAsciiABinario",
+      "request": "launch",
       "mainClass": "MainAsciiABinario",
       "projectName": "Cesar_Cypher_Criptografia_64cb31a"
     },

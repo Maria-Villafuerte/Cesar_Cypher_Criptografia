@@ -1,3 +1,4 @@
+
 public class MainXorBinario {
     
     public static void main(String[] args) {
