@@ -1,8 +1,8 @@
+
 public class MainAsciiABinario {
     
     public static void main(String[] args) {
-        ConvertidorBinario convertidor = new ConvertidorBinario();
-        
+        ConvertidorBinario convertidor = new ConvertidorBinario(); 
         String texto = "Hola";
         String resultado = convertidor.asciiABinario(texto);
         
